@@ -5,21 +5,21 @@
 class ChargebeeCli < Formula
   desc "Chargebee CLI — develop, test, and manage your Chargebee integration"
   homepage "https://github.com/jhuiting/chargebee-cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.3/chargebee-cli_0.1.3_darwin_amd64.tar.gz"
-      sha256 "1daab14db682f2e830f3f0f60f727d0adb07e7089597d6e30eca2efe0c77a3b7"
+      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.4/chargebee-cli_0.1.4_darwin_amd64.tar.gz"
+      sha256 "14835c1d02291178604f445f8054d3b193ba367a4cc5c17db1ce499eb940a466"
 
       define_method(:install) do
         bin.install "cb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.3/chargebee-cli_0.1.3_darwin_arm64.tar.gz"
-      sha256 "2b5180363c46e17ad32ac697d1e1f9b91c1120678a28f9a0db66a5b7c5b75ec5"
+      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.4/chargebee-cli_0.1.4_darwin_arm64.tar.gz"
+      sha256 "fc2efd892d2cd187e4ce60ef1713c5ab13699cd3b88e37bf3859e48e125a1259"
 
       define_method(:install) do
         bin.install "cb"
@@ -29,15 +29,15 @@ class ChargebeeCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.3/chargebee-cli_0.1.3_linux_amd64.tar.gz"
-      sha256 "e99150a7a7976e55a1a1bc2d7a599f773cbb080c4739a6c4d4fd7c263d34ed4e"
+      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.4/chargebee-cli_0.1.4_linux_amd64.tar.gz"
+      sha256 "5b2f3127624378c924f5e18d90978db0e7591e53ba24d15bc88d129eeb7822a1"
       define_method(:install) do
         bin.install "cb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.3/chargebee-cli_0.1.3_linux_arm64.tar.gz"
-      sha256 "a64949ce0a00786d1e0442bada798058d012fe3b808798e4d60e5a557199c598"
+      url "https://github.com/jhuiting/chargebee-cli/releases/download/v0.1.4/chargebee-cli_0.1.4_linux_arm64.tar.gz"
+      sha256 "d2c7190b07568800ddc40a201e1621e8850cfbea4e391abd9638d7d390964df2"
       define_method(:install) do
         bin.install "cb"
       end
